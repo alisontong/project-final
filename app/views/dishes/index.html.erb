@@ -1,0 +1,15 @@
+
+<h1>Main Menu</h1>
+
+<%= link_to 'Add a new dish', new_dish_path %>
+
+<% @dishes.each do |dish| %>
+ 
+    <h2><%= dish.title %></h2>
+        <hr>
+        <p>description: <%= dish.description %></p>
+        <p>price: <%= dish.price %></p>
+        <p><img src="<%= dish.image_url %>"></p>
+<% end %>
+
+

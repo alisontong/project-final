@@ -1,0 +1,28 @@
+<div class="newdishpage">
+
+<div class="col-sm-4 col-sm-offset-4">
+<div id="newdishbox">
+<h1>Add a new dish</h1>
+<%= form_for :dish, url: dishes_path do |f| %>
+  <%= f.label :title, "title" %>:
+     <%= f.text_field :title, class:"form-control", required: true %><br />
+     <%= f.label :descripton, "description" %>:
+     <%= f.text_field :description, class:"form-control", required: true %><br />
+     <%= f.label :price, "price" %>:
+     <%= f.text_field :price, class:"form-control", required: true %><br />
+     <%= f.label :image_url, "image" %>:
+     <%= f.text_field :image_url, class:"form-control", required: true %><br />
+  <br>
+   <%= f.submit "save post", class:"btn btn-primary" %>
+<% end %>
+  <br>
+  </div>
+
+</div>
+<%= link_to 'Back', root_url %>
+
+</div>
+
+
+
+

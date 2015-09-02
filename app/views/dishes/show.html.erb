@@ -1,0 +1,16 @@
+<div class="newdishpage">
+
+<div class="col-sm-4 col-sm-offset-4">
+<div id="menuPage">
+<%=link_to 'Back', root_url%>
+        <h2><%= @dish.title %></h2>
+        <hr>
+        <p>description: <%= @dish.description %></p>
+        <p>price: <%= @dish.price %></p>
+        <p><img src="<%= @dish.image_url %>"></p>
+  <br>
+  </div>
+
+</div>
+
+</div>
